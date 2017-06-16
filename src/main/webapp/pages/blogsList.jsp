@@ -12,7 +12,7 @@
 
 </c:forEach>
 
-<h2>${blog.id} ${blog.blogTitle} ${blog.blogDescription}</h2>
+
 
 
 

@@ -32,4 +32,9 @@ public class BlogServiceImpl implements BlogService {
     public List<Blog> findAll() {
         return blogDAO.findAll();
     }
+
+    @Override
+    public Blog findOneWithPosts(Integer id) {
+        return blogDAO.findOneWithPosts(id);
+    }
 }

@@ -33,12 +33,11 @@ public class DataConfig {
    //        return dataSource;
            HikariConfig hikariConfig = new HikariConfig();
            hikariConfig.setDriverClassName("com.mysql.jdbc.Driver");
-           hikariConfig.setJdbcUrl("jdbc:mysql://localhost:3306/springmvc2015");
+           hikariConfig.setJdbcUrl("jdbc:mysql://localhost:3306/springmvc1500");
            hikariConfig.setUsername("root");
            hikariConfig.setPassword("root");
 
            hikariConfig.setMaximumPoolSize(5);
-           hikariConfig.setConnectionTestQuery("SELECT 1");
            hikariConfig.setPoolName("springHikariCP");
 
            hikariConfig.addDataSourceProperty("dataSource.cachePrepStmts", "true");

@@ -11,4 +11,7 @@ public interface BlogService {
 
     List<Blog> findAll();
 
+    Blog findOneWithPosts(Integer id);
+
+
 }
