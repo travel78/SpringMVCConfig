@@ -27,6 +27,11 @@ public class PostServiceImpl implements PostService {
         return postDAO.findOne(id);
     }
 
+    @Override
+    public Post findOneWithBlog(int id) {
+        return postDAO.findOneWithBlog(id);
+    }
+
     public List<Post> findAll() {
         return postDAO.findAll();
     }

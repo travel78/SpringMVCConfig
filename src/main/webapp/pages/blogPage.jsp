@@ -7,6 +7,11 @@
         <li>${post.postTitle} <a href="/detPost-${post.id}">details</a></li>
     </c:forEach>
 </ul>
+<form action="/subscribe" method="post">
+    <input type="email" name="email">
+    <input type="submit" name="">
+
+</form>
 
 </body>
 </html>

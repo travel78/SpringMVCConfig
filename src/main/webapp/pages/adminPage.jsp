@@ -14,7 +14,7 @@
     <sf:input path="postText"/>
     <sf:select path="blog">
         <c:forEach items="${blogs}" var="blog">
-            <%--<sf:option value=""></sf:option>--%>
+            <sf:option value="${blog.id}">${blog.blogTitle}</sf:option>
         </c:forEach>
     </sf:select>
     <input type="submit">

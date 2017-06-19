@@ -9,6 +9,7 @@ public interface PostService {
     void save(Post post);
 
     Post findOne(int id);
+    Post findOneWithBlog(int id);
 
     List<Post> findAll();
 
