@@ -48,8 +48,9 @@ public class AdminController {
 
 
     @PostMapping("/savePost")
-    public String savePost(@ModelAttribute("emptyPost") @Validated Post post, BindingResult result) {
+    public String savePost(@ModelAttribute("emptyPost") @Validated Post post, BindingResult result,Model model) {
         if(result.hasErrors()){
+            model.addAttribute("blogs", blogService.findAll());
             return "adminPage";
         }
         postService.save(post);
@@ -68,6 +69,6 @@ public class AdminController {
 
     }
 
-    // HIKARICP
+
 
 }
