@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface BlogService {
     void save(String blogTitle , String blogDescription);
-
+    void sava(Blog blog);
     Blog findOne(Integer id);
 
     List<Blog> findAll();

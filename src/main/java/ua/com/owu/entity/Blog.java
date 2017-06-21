@@ -20,6 +20,7 @@ public class Blog {
     private String blogDescription;
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "blog")
     private List<Post> posts;
+    private String picture;
 
 
 

@@ -22,7 +22,7 @@ public class MailServiceImpl implements MailService {
         MimeMessage message = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message);
         try {
-            helper.setFrom("sergey.okten@gmail.com");
+            helper.setFrom("shpyrna1982@gmail.com");
             helper.setTo(new InternetAddress(email));
             helper.setText("you`we been subscribe.....to blog " + blog.getBlogDescription() + " visit our " +
                     "website <a href='http://owu.com.ua'> here </a>", true);
